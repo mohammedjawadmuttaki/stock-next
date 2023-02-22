@@ -1,6 +1,7 @@
 import { connect, model, models, Schema } from "mongoose"
 //const connectionString = 'mongodb+srv://user1:z6118324@cluster0.a9a3ze2.mongodb.net/blogs'
 const connectionString = process.env.MONGODB_URI
+
 export default async function handler(req, res) {
     await connect(connectionString);
     console.log("req.method: ", req.method)
