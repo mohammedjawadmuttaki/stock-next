@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 export default function Home({ stock }) {
 
   function deleteBlog(id) {
-    fetch(`http://localhost:3000/api/stock/products/${id}`,
+    fetch(`http://api/stock/products/${id}`,
       {
         method: 'DELETE'
       })
